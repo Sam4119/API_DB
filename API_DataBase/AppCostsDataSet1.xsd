@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AppCostsDataSet1" targetNamespace="http://tempuri.org/AppCostsDataSet1.xsd" xmlns:mstns="http://tempuri.org/AppCostsDataSet1.xsd" xmlns="http://tempuri.org/AppCostsDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="AppCostsConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AppCostsConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.API_DataBase.Properties.Settings.GlobalReference.Default.AppCostsConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ExpensesTableAdapter" GeneratorDataComponentClassName="ExpensesTableAdapter" Name="Expenses" UserDataComponentName="ExpensesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="AppCostsConnectionString (Settings)" DbObjectName="AppCosts.dbo.Expenses" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Command FROM dbo.Expenses</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Command" DataSetColumn="Command" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AppCostsDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="AppCostsDataSet1" msprop:Generator_UserDSName="AppCostsDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Expenses" msprop:Generator_TableClassName="ExpensesDataTable" msprop:Generator_TableVarName="tableExpenses" msprop:Generator_TablePropName="Expenses" msprop:Generator_RowDeletingName="ExpensesRowDeleting" msprop:Generator_RowChangingName="ExpensesRowChanging" msprop:Generator_RowEvHandlerName="ExpensesRowChangeEventHandler" msprop:Generator_RowDeletedName="ExpensesRowDeleted" msprop:Generator_UserTableName="Expenses" msprop:Generator_RowChangedName="ExpensesRowChanged" msprop:Generator_RowEvArgName="ExpensesRowChangeEvent" msprop:Generator_RowClassName="ExpensesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Command" msprop:Generator_ColumnVarNameInTable="columnCommand" msprop:Generator_ColumnPropNameInRow="Command" msprop:Generator_ColumnPropNameInTable="CommandColumn" msprop:Generator_UserColumnName="Command" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
