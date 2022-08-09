@@ -16,7 +16,7 @@ namespace API_DataBase
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form());
+            Application.Run(new frmAPI());
         }
     }
 }
